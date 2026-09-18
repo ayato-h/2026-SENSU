@@ -5,6 +5,12 @@
     padding: 0;
 }
 
+header {
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 20px;
+}
+
 body {
     background-color: #1c1e1f;
 }
@@ -15,7 +21,7 @@ main {
 
 .top {
     padding: 50px;
-    border: 2px solid #E8E2D6;
+    border: 3px solid #E8E2D6;
 }
 
 .catchphrase {
@@ -58,12 +64,60 @@ main {
 
 footer {
     background-color: #191c21;
-    padding: 50px;
+    padding: 50px 50px 10px 50px;
     font-size: 48px;
 }
 
 footer small {
-    display: block;
-    text-align: center;
     font-size: 24px;
+}
+
+.bottom-nav {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 580px;
+    height: 85px;
+
+    background-color: #E8E2D6;
+    border-top: 3px solid #1c1e1f;
+    border-radius: 40px;
+
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    z-index: 1000;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+}
+
+.bottom-nav a,
+.bottom-nav span,
+.bottom-nav small {
+    color: #1c1e1f;
+}
+
+.bottom-nav a {
+    text-decoration: none;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.bottom-nav span {
+    font-size: 24px;
+}
+
+.bottom-nav span img {
+    width: 50px;
+}
+
+.bottom-nav small {
+    font-size: 12px;
 }

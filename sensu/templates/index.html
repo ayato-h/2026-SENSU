@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
+    <header>
+        <h1>SENSU</h1>
+    </header>
     <main>
         <div class="top">
             <img src="{% static 'images/キャッチフレーズ.png' %}" alt="catchphrase" class="catchphrase">
@@ -81,5 +84,22 @@
         <p>ABOUT</p>
         <small>© 2026 SENSU</small>
     </footer>
+    <nav class="bottom-nav">
+        <a href="">
+            <span>⌂</span>
+            <small>HOME</small>
+        </a>
+
+        <a href="">
+            <span><img src="{% static 'images/sensu.jpg' %}" alt="sensu" class="sensu"></span>
+            <small>SENSU</small>
+        </a>
+
+        <a href="">
+            <span>○</span>
+            <small>ABOUT</small>
+        </a>
+    </nav>
+
 </body>
 </html>
