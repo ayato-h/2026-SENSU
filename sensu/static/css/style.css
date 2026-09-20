@@ -66,6 +66,7 @@ footer {
     background-color: #191c21;
     padding: 50px 50px 10px 50px;
     font-size: 48px;
+    border-top: 3px solid #E8E2D6;
 }
 
 footer small {
@@ -120,4 +121,95 @@ footer small {
 
 .bottom-nav small {
     font-size: 12px;
+}
+
+@media screen and (max-width: 600px) {
+
+    * {
+        box-sizing: border-box;
+    }
+
+    header {
+        font-size: 32px;
+        letter-spacing: 10px;
+        padding: 10px 0;
+    }
+
+    main {
+        margin: 20px;
+        padding-bottom: 120px;
+    }
+
+    .top {
+        padding: 25px 20px;
+        border-width: 2px;
+    }
+
+    .catchphrase {
+        width: 150px;
+    }
+
+    .sensu-list {
+        margin-top: 30px;
+        gap: 20px;
+        padding-bottom: 15px;
+
+        overflow-x: auto;
+        scrollbar-width: none;
+    }
+
+    .sensu-list::-webkit-scrollbar {
+        display: none;
+    }
+
+    .sensu {
+        width: 110px;
+    }
+
+    .sensu-info {
+        height: 65vh;
+        margin-top: 10px;
+        border-width: 2px;
+    }
+
+    .sensu-info p {
+        font-size: 22px;
+    }
+
+    footer {
+        padding: 30px 20px 10px;
+        font-size: 30px;
+    }
+
+    footer small {
+        font-size: 16px;
+    }
+
+    /* Bottom Navigation */
+
+    .bottom-nav {
+        width: calc(100% - 30px);
+        max-width: 400px;
+        height: 70px;
+
+        bottom: 15px;
+
+        border-radius: 35px;
+    }
+
+    .bottom-nav a {
+        gap: 2px;
+    }
+
+    .bottom-nav span {
+        font-size: 18px;
+    }
+
+    .bottom-nav span img {
+        width: 35px;
+    }
+
+    .bottom-nav small {
+        font-size: 9px;
+    }
 }
