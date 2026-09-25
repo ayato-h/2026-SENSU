@@ -1,105 +1,70 @@
+{% extends "base.html" %}
 {% load static %}
 
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <title>SENSU</title>
+{% block title %}SENSU{% endblock %}
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+{% block content %}
 
-    <link rel="icon" href="{% static 'images/sensu.jpg' %}">
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-</head>
-<body>
-    <header>
-        <h1>SENSU</h1>
-    </header>
-    <main>
-        <div class="top">
-            <img src="{% static 'images/キャッチフレーズ.png' %}" alt="catchphrase" class="catchphrase">
-        </div>
-        <div class="sensu-list">
-            <div class="sensu-item">
-            <img src="{% static 'images/sensu.jpg' %}" alt="sensu" class="sensu">
-    
-            <div class="sensu-info">
-                <p>SENSU 01</p>
-            </div>
-        </div>
-        <div class="sensu-item">
-            <img src="{% static 'images/sensu.jpg' %}" alt="sensu" class="sensu">
-    
-            <div class="sensu-info">
-                <p>SENSU 02</p>
-            </div>
-        </div>
-        <div class="sensu-item">
-            <img src="{% static 'images/sensu.jpg' %}" alt="sensu" class="sensu">
-    
-            <div class="sensu-info">
-                <p>SENSU 03</p>
-            </div>
-        </div>
-        <div class="sensu-item">
-            <img src="{% static 'images/sensu.jpg' %}" alt="sensu" class="sensu">
-    
-            <div class="sensu-info">
-                <p>SENSU 04</p>
-            </div>
-        </div>
-        <div class="sensu-item">
-            <img src="{% static 'images/sensu.jpg' %}" alt="sensu" class="sensu">
-    
-            <div class="sensu-info">
-                <p>SENSU 05</p>
-            </div>
-        </div>
-        <div class="sensu-item">
-            <img src="{% static 'images/sensu.jpg' %}" alt="sensu" class="sensu">
-    
-            <div class="sensu-info">
-                <p>SENSU 06</p>
-            </div>
-        </div>
-        <div class="sensu-item">
-            <img src="{% static 'images/sensu.jpg' %}" alt="sensu" class="sensu">
-    
-            <div class="sensu-info">
-                <p>SENSU 07</p>
-            </div>
-        </div>
-        <div class="sensu-item">
-            <img src="{% static 'images/sensu.jpg' %}" alt="sensu" class="sensu">
-    
-            <div class="sensu-info">
-                <p>SENSU 08</p>
-            </div>
-        </div>
-        </div>
-    </main>
-    <footer>
-        <!-- <p id="about">ABOUT</p> -->
-        <small>© 2026 SENSU</small>
-    </footer>
-    <nav class="bottom-nav">
-        <a href="">
-            <span>⌂</span>
-            <small>HOME</small>
-        </a>
+<div class="top">
+    <img src="{% static 'images/キャッチフレーズ.png' %}" alt="catchphrase" class="catchphrase">
+</div>
+<div class="sensu-list">
+    <div class="sensu-item">
+    <img src="{% static 'images/sensu.jpg' %}" alt="sensu" class="sensu">
 
-        <a href="">
-            <span><img src="{% static 'images/sensu.jpg' %}" alt="sensu" class="sensu"></span>
-            <small>SENSU</small>
-        </a>
+    <div class="sensu-info">
+        <p>SENSU 01</p>
+    </div>
+</div>
+<div class="sensu-item">
+    <img src="{% static 'images/sensu.jpg' %}" alt="sensu" class="sensu">
 
-        <a href="">
-            <span>○</span>
-            <small>ABOUT</small>
-        </a>
-    </nav>
+    <div class="sensu-info">
+        <p>SENSU 02</p>
+    </div>
+</div>
+<div class="sensu-item">
+    <img src="{% static 'images/sensu.jpg' %}" alt="sensu" class="sensu">
 
-</body>
-</html>
+    <div class="sensu-info">
+        <p>SENSU 03</p>
+    </div>
+</div>
+<div class="sensu-item">
+    <img src="{% static 'images/sensu.jpg' %}" alt="sensu" class="sensu">
+
+    <div class="sensu-info">
+        <p>SENSU 04</p>
+    </div>
+</div>
+<div class="sensu-item">
+    <img src="{% static 'images/sensu.jpg' %}" alt="sensu" class="sensu">
+
+    <div class="sensu-info">
+        <p>SENSU 05</p>
+    </div>
+</div>
+<div class="sensu-item">
+    <img src="{% static 'images/sensu.jpg' %}" alt="sensu" class="sensu">
+
+    <div class="sensu-info">
+        <p>SENSU 06</p>
+    </div>
+</div>
+<div class="sensu-item">
+    <img src="{% static 'images/sensu.jpg' %}" alt="sensu" class="sensu">
+
+    <div class="sensu-info">
+        <p>SENSU 07</p>
+    </div>
+</div>
+<div class="sensu-item">
+    <img src="{% static 'images/sensu.jpg' %}" alt="sensu" class="sensu">
+
+    <div class="sensu-info">
+        <p>SENSU 08</p>
+    </div>
+</div>
+</div>
+
+{% endblock %}

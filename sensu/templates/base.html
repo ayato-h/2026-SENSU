@@ -1,0 +1,52 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}SENSU{% endblock %}</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="{% static 'images/sensu.jpg' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+
+    <header>
+        <h1>SENSU</h1>
+    </header>
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer>
+        <small>© 2026 SENSU</small>
+    </footer>
+
+    <nav class="bottom-nav">
+        <a href="{% url 'index' %}">
+            <span>⌂</span>
+            <small>HOME</small>
+        </a>
+
+        <a href="{% url 'create' %}">
+            <span>
+                <img src="{% static 'images/sensu.jpg' %}" alt="sensu" class="sensu">
+            </span>
+            <small>SENSU</small>
+        </a>
+
+        <a href="">
+            <span>○</span>
+            <small>ABOUT</small>
+        </a>
+    </nav>
+
+</body>
+</html>
