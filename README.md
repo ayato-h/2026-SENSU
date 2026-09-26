@@ -48,3 +48,5 @@ python manage.py migrate
 ```bash
 python manage.py runserver
 ```
+├── screens.md           
+├── features.md          # 機能一覧
